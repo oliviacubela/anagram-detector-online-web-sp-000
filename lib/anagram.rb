@@ -9,7 +9,8 @@ class Anagram
 
   def match
     collection.split.collect do |words|
-      
+      puts "test"
+    end
   end
 
 end

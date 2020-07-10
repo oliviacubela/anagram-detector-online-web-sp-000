@@ -8,7 +8,8 @@ class Anagram
   end
 
   def match
-
+    collection.split.collect do |words|
+      words.select
   end
 
 end

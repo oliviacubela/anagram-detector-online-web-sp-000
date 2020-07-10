@@ -1,15 +1,14 @@
 class Anagram
 
-  attr_accessor :word, :collection
+  attr_accessor :word
 
   def initialize(word)
     @word = word
-    @collection = []
   end
 
-  def match
-    collection.split.collect do |words|
-      puts "test"
+  def match(new_array)
+    new_array.select do |words|
+      (@word.split("").sort) == (words.split("").sort)
     end
   end
 
